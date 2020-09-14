@@ -7,17 +7,17 @@ Aim : Perform such commands such as Initial settings
        Sudo Settings.
 
 
-Add a useruseradd creates a new user account according to 
+1)Add a useruseradd creates a new user account according to 
 the options specified on the command line and the default
 values set in the
  /etc/default/useradd file.useradd [OPTIONS] USERNAME$ sudo useradd username2.
-Network Settingsnetstat –I to find the interface name.
-sudo ifconfig eth0 192.168.72.6 netmask 255.255.255.0
+2)Network Settingsnetstat –I to find the interface name.
+3)Change to static ip address1. 
+To setup static IP address in Debian$ nano /etc/network/interfaces
+4)sudo ifconfig eth0 192.168.72.6 netmask 255.255.255.0
 Then to add a default gateway:sudo route add default gw 192.168.72.1 eth03.
-Configure serviceCommand-sudo systemctl start service4.
-Display the list serviceTo list all loaded services on your system 
-whether active; running, exited or failed, use the list-units subcommand
+5)Configure serviceCommand-sudo systemctl start service4.
+6)Display the list serviceTo list all loaded services on your system 
+7)whether active; running, exited or failed, use the list-units subcommand
 and --type switch with a value of service.
 # systemctl list-units --type=serviceOR# systemctl --type=service5.
-Change to static ip address1. 
-To setup static IP address in Debian$ nano /etc/network/interfaces
