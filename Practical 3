@@ -22,14 +22,14 @@ To enable or active nfs kernel server
 
 [Create a directory to show the function of nfs i.e(mounting)]
 
-3)mkdir tycs_a
+3)mkdir tycs_rishi
 4)touch r.txt
 
 5)cat /etc/exports
 
 configure your exports file by adding /directory_path/ ipaddr (permissions)
 
-6)sudo exportfs -ra
+6)sudo exportfs -rrishi
 
 7)sudo apt-get -y install nfs-common
 
