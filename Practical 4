@@ -1,0 +1,34 @@
+                 Practical no 4
+Aim:SSH server 
+
+What is ssh server?
+
+1)SSH stand for secure shell.
+2)ssh is mainly used for securely logged into 
+another device with remotely.
+3)ssh uses for Data transfer from one machine to others 
+Machine with securely.
+
+Commands:
+
+To install SSH, first update the package repository cache with
+
+  sudo apt-get update
+
+1)To install the OpenSSH software package 
+
+  sudo apt-get -y install openssh-server
+
+2)To enable SSH
+
+  sudo systemctl enable ssh
+
+3)if required change the configurations from the sshd config file
+ 
+  sudo systemctl start ssh
+ 
+  sudo systemctl status ssh
+ 
+  sudo ssh localhost
+ 
+Then enter your root or user password whatever it may be
