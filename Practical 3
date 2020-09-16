@@ -1,0 +1,36 @@
+                  Practical no 3
+Aim: Configure NFS server,install and configure NFSd,
+     Configure NFS client.
+  
+What is NFS server ?
+
+1)The Network File System is a client/server application 
+that lets a computer user view and optionally store and
+update files on a remote computer as though they were 
+on the user's own computer.
+2)NFS allows the user or system administrator to mount
+all or a portion of a file system on a server.
+
+Command's to perform:
+To install NFS kernel 
+
+1)sudo apt-get -y install nfs-kernel-server
+
+To enable or active nfs kernel server
+
+2)sudo systemctl enable nfs-kernel-server
+
+[Create a directory to show the function of nfs i.e(mounting)]
+
+3)mkdir tycs_a
+4)touch r.txt
+
+5)cat /etc/exports
+
+configure your exports file by adding /directory_path/ ipaddr (permissions)
+
+6)sudo exportfs -ra
+
+7)sudo apt-get -y install nfs-common
+
+8)sudo mount -t nfs /directorytoexport client_ip_ntwrk (permissions) 
