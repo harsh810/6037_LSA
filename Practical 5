@@ -1,0 +1,11 @@
+           Practical no 5
+Aim : Install samba server
+  
+What is samba server?
+Samba is an open-source software suite that runs on 
+Unix/Linux based platforms but is able to communicate
+with Windows clients like a native application.
+So Samba is able to provide this service by employing 
+the Common Internet File System (CIFS).
+
+Command to install samba :
